@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./footer.css">
+    <title>REGISTER</title>
+</head>
+
+<body>
+
+
+    <!-- Nav -->
+
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="./home.html"><img src="./Logo/nav-2.png" alt="logo"></a></div>
+            <ul class="links">
+              <li><a href="./login.html" class="login-mobile">Log in</a></li>
+              <li>
+                <a href="./menu.html" class="desktop-link">Menu<i class="fa-solid fa-chevron-down"></i></a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services"><a href="./menu.html">Menu</a><i class="fa-solid fa-chevron-down"></i></label>
+                <ul>
+                  <li>
+                    <a href="./cake.html" class="desktop-link">Cake<i class="fa-solid fa-angle-right"></i></a>
+                    <input type="checkbox" id="show-items">
+                    <label for="show-items"><a href="./cake.html">Cake</a><i class="fa-solid fa-chevron-down"></i></label>
+                    <ul>
+                      <li><a href="./cake.html">Chocolate cake</a></li>
+                      <li><a href="./vanicake.html">Vanilla cake</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./cheesecake.html">Cheese cake</a></li>
+                  <li><a href="./cupcake.html">Cup cake</a></li>
+                  <li><a href="./cookie.html">Cookie</a></li>
+                </ul>
+              </li>
+              <li><a href="./promotion.html">Promotion</a></li>
+              <li>
+                <a href="./about.html" class="desktop-link">About<i class="fa-solid fa-chevron-down"></i></a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features"><a href="./about.html">About</a><i class="fa-solid fa-chevron-down"></i></label>
+                <ul>
+                  <li><a href="./FAQ.html">FAQ</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li><a href="./gallery.html">Galleries</a></li>
+              <li class="social-icon"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-google"></i></li>
+            </ul>
+          </div>
+          <label></label>
+          <a href="./login.html" class="user-icon desktop-link"><i class="fa-regular fa-user"></i>Log In</a>
+        </nav>
+      </div>
+
+    <!-- Regis -->
+    <div class="container">
+
+        <form id="form" class="form" method="POST" action="#">
+            <header>
+                <h1>Register</h1>
+            </header>
+
+            <div class="form-control">
+                <label>Name</label> <input name="name" type="text"><br>
+                <label>Surname</label> <input name="surname" type="text"><br>
+                <label>Email</label> <input name="email" type="email"><br>
+                <label>Password</label> <input name="pwd" type="password"><br>
+                <label>Confirm Password</label> <input name="cpwd" type="password">
+            </div>
+
+            <button class="button" type="submit" id="submit1">Submit</button>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-pic"><img src="./Logo/no-back1.png" alt=""></div>
+  
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="./home.html">HOME</a></li>
+                  <li><a href="./menu.html">Menu</a></li>
+                  <li><a href="./promotion.html">Promotion</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./gallery.html">Galleries</a></li>
+              </ul>
+  
+              <ul>
+                  <li><a href="./menu.html">MENU</a></li>
+                  <li><a href="./cake.html">Cake</a></li>
+                  <li><a href="./cupcake.html">Cupcake</a></li>
+                  <li><a href="./cheesecake.html">Cheesecake</a></li>
+                  <li><a href="./cookie.html">Cookie</a></li>
+              </ul>
+  
+          </div>
+  
+          <div class="footer-nav">
+              <ul>
+                  <li><a href="./about.html">ABOUT</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./FAQ.html">FAQ</a></li>
+              </ul>
+  
+              <ul>
+                  <li><a >HOURS</a></li>
+                  <li><p>Mon-Fri</p></li>
+                  <li><p>8AM-7PM</p></li>
+              </ul>
+  
+          </div>
+  
+  
+      </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+header {
+    color: brown;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+
+
+
+
+form {
+    width: 300px;
+
+
+
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 16px rgba(104, 104, 104, 0.2), 0 6px 20px rgba(104, 104, 104, 0.2);
+    text-align: left;
+
+}
+
+
+
+
+.button {
+
+    width: 100px;
+    padding: 7px;
+    margin-top: 30px;
+    background-color: brown;
+    border: 1px solid brown;
+    color: rgb(255, 255, 255);
+}
+
+.button:hover {
+    background-color: rgb(84, 29, 29);
+    border: 1px solid rgb(84, 29, 29);
+    transition: 0.5s;
+}
+
+.form-control label {
+    color: rgba(118, 118, 118, 0.544);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #dadada;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    padding: 7px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 500px;
+    min-height: 400px;
+    background: linear-gradient(0deg, rgba(212, 212, 212, 0.804), rgba(245, 245, 245, 0.5)), url(https://cdn.thenudge.com/wp-content/uploads/2020/03/food-photographer-jennifer-pallian-8Jg4U4xHu-o-unsplash.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        color: brown;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    form {
+        width: 300px;
+        padding: 50px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 8px 16px rgba(104, 104, 104, 0.2), 0 6px 20px rgba(104, 104, 104, 0.2);
+        text-align: left;
+
+    }
+
+    .button {
+
+        width: 100%;
+        padding: 8px;
+        margin-top: 30px;
+        background-color: brown;
+        border: 1px solid brown;
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+
+    .button:hover {
+        background-color: rgb(84, 29, 29);
+        border: 1px solid rgb(84, 29, 29);
+
+    }
+
+    .form-control label {
+        color: rgba(118, 118, 118, 0.544);
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        border: 2px solid #dadada;
+        border-radius: 10px;
+        display: block;
+        width: 90%;
+        padding: 7px;
+    }
+
+}

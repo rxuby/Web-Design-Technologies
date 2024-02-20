@@ -1,0 +1,172 @@
+/* @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+	box-sizing: border-box;
+}
+
+/*Body*/
+.container{
+    overflow: hidden;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.profuct_info{
+    min-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.product_size{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product_size .h1{
+    padding-bottom: 12%;
+    padding-left: 12%;
+    display: flex;
+    justify-content: flex-start;
+    padding: auto;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: brown;
+    color: white;
+    width: 100%;
+    height: 40%;
+    
+}
+.cookiepi{
+    padding: 3%;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookpicc{
+    color: brown;
+    margin: 0 1%;
+    padding: 15px;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid brown;
+    border-radius: 100px;
+}
+.re{
+    min-width: 720px;
+    margin-left: 16%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.more_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+.more_info textarea{
+    border-radius: 10px;
+    height: 30%;
+    width: 80%;
+}
+.more_info a{
+    margin-top: 4%;
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 5% 25%;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+.cookpicc:hover{
+    color: white;
+    background-color: brown;
+}
+
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+        height: max-content;
+    }
+    .container img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+    .profuct_info{
+        height: 80vh;
+        width: 100%;
+    }
+    .product_size .h1{
+        padding: 4%;
+    }
+    .more_info a{
+        margin-top: 4%;
+
+        padding: 4% 20%;
+        font-size: 1.5rem;
+    }
+    .cookpicc{
+        height: 100px;
+        width: 100px;
+    }
+    .product_size{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .re{
+        min-width: 720px;
+        margin-left: 16%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .more_info textarea{
+        height: 40%;
+        width: 50%;
+    }
+    .product_size .h1{
+        display: flex;
+        justify-content: center;
+        padding: auto;
+        align-items: center;
+        padding-bottom: 10px;
+        background-color: brown;
+        color: white;
+        width: 100%;
+        height: 40%;
+    }
+    
+}
