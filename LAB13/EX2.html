@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .taxt {
+            padding: 0;
+        }
+
+        input[type="date"]::-webkit-datetime-edit {
+            display: none;
+        }
+
+        input[type="date"] {
+            vertical-align: middle;
+            padding: 1px;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        button[type="submit"] {
+            font-size: 1rem;
+        }
+
+        input[type="text"][value="http://"] {
+            width: 100%;
+        }
+
+        fieldset {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 64px;
+            padding: 16px;
+            padding-bottom: 48px;
+            width: 64em;
+        }
+
+        fieldset * {
+            line-height: 150%;
+        }
+
+        fieldset section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset section div {
+            padding: 8px;
+        }
+
+        fieldset section div label:first-of-type {
+            font-weight: bold;
+        }
+
+        fieldset section div .require::after {
+            content: "*";
+            color: #f00;
+        }
+
+        fieldset section div .sub {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            width: min-content;
+        }
+
+        fieldset section div .sub input[type="text"]:not([name="first"], [name="last"]) {
+            width: 100%;
+        }
+
+        fieldset section div .sub .text {
+            padding: 1px 2px;
+        }
+
+        fieldset section:first-of-type>div:first-of-type {
+            background: rgba(255, 255, 0, 0.19);
+        }
+
+        fieldset section:first-of-type div:first-of-type select[name="position"] {
+            width: 50%;
+            height: 1.5rem;
+        }
+
+        fieldset section:last-of-type div:last-of-type {
+            margin-top: auto;
+        }
+
+        button {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="#">
+        <fieldset>
+            <legend>
+                <h1>Employee Application</h1>
+            </legend>
+            <section>
+                <div>
+                    <label for="position" class="require">Whice position are you applying for?</label>
+                    <select name="position" id="position">
+                        <option value="0" hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label class="require">Are you willing to relocate?</label><br>
+                    <input type="radio" name="relocate" id="yes" checked><label for="yes">Yes</label> <br>
+                    <input type="radio" name="relocate" id="no"><label for="no">No</label>
+                </div>
+
+                <div>
+                    <label class="require">When can you start?</label>
+                    <span class="sub">
+                        <input type="text" maxlength="2" size="2" pattern="[0-9]{2}">
+                        <div class="text">MM</div>
+                    </span>
+
+                    <span class="sub">
+                        <input type="text" maxlength="2" size="2" pattern="[0-9]{2}">
+                        <div class="text">DD</div>
+                    </span>
+
+                    <span class="sub">
+                        <input type="text" maxlength="4" size="4" pattern="[0-9]{2}">
+                        <div class="text">YYYY</div>
+                    </span>
+                    <input type="date" name="d">
+                </div>
+                <div>
+                    <label for="#">Portfolio Web Site</label>
+                    <input type="text" value="http://">
+                </div>
+
+                <div>
+                    <label for="#">Attach a copy of your Resume</label>
+                    <input type="file">
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Your contct Information</h3>
+                </div>
+
+                <div>
+                    <label for="#" class="require">Name</label>
+                    <span class="sub">
+                        <input type="text" name="first" size="8">
+                        <div class="text">First</div>
+                    </span>
+
+                    <span class="sub">
+                        <input type="text" name="last" size="16">
+                        <div class="text">Last</div>
+                    </span>
+                </div>
+                <div>
+                    <label for="" class="require">Email Address</label> <br>
+                    <input type="email" name="email" size="50">
+                </div>
+                <div>
+                    <label for="#" class="require">Phone</label> <br>
+                    <span class="sub">
+                        <input type="text" maxlength="3" size="3" pattern="[0-9]{3}">
+                        <div class="text">###</div>
+                    </span> -
+
+                    <span class="sub">
+                        <input type="text" maxlength="3" size="3" pattern="[0-9]{3}">
+                        <div class="text">###</div>
+                    </span> -
+
+                    <span class="sub">
+                        <input type="text" maxlength="4" size="4" pattern="[0-9]{4}">
+                        <div class="text">###</div>
+                    </span>
+
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </section>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
