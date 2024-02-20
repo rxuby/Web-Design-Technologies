@@ -1,0 +1,87 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+	box-sizing: border-box;
+}
+
+/*body*/
+.container{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 400px;
+    background-color: white;
+    
+}
+.duo{
+    background-color: rgb(249, 244, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+}
+.re{
+    flex-direction: row-reverse;
+}
+.duo img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid brown;
+}
+.menudetail{
+    height: 100%;
+    border: 2px solid brown;
+    width: 50%;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menudetail p{
+    color: brown;
+    margin: 10% 0;
+    width: 80%;
+}
+.menudetail a{
+    color: brown;
+    text-decoration: none;
+    border: 2px solid brown;
+    padding: 12px 28px;
+    transition: .3s;
+}
+
+.menudetail a:hover{
+    background-color: brown;
+    color: white;
+}
+@media screen and (max-width:1024px) {
+    .re{
+        flex-direction: column;
+    }
+    .duo{
+        flex-direction: column;
+        min-height: 600px;
+    }
+    .duo img{
+        width: 100%;
+        height: 50%;
+    }
+    .menudetail{
+        width: 100%;
+        height: 50%;
+    }
+
+
+}

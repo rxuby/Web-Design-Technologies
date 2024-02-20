@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        header,
+        footer,
+        section,
+        article{
+            border: 1px solid grey;
+            margin: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        #myCanvas{
+            border:1px;
+            background-color: green;
+            margin-left: 100px;
+            margin-bottom: 40px;
+            
+        }
+
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li{
+            display: inline;
+            margin: 5px;
+        }
+
+        header,footer{
+            background-color: darkgreen;
+            color: white;
+            padding: 20px;
+        }
+        
+        section{
+            background-color: rgb(181, 237, 227);
+        }
+
+        article{
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+       <h1> Assignment#2</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>HTML5</h3>
+        <article>
+            <h4>What is html5 (video)</h4>
+            <video width="400" src="./video_for_ass2.mp4" controls></video>
+
+        </article>
+
+        <article>
+            <h4>Image</h4> 
+            <img  width="600" height="200" src="./image_for_ass2.jpg">
+            <canvas id="myCanvas" width="200" height="100" ></canvas>
+        </article>
+    </section>
+
+    <footer>&copy;2015 WDT.All rights reserved</footer>
+
+</body>
+</html>
